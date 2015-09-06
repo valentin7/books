@@ -242,8 +242,13 @@ $(document).ready(function() {
 			element.style.background = "url(" + cards[i]["imageURL"] +") no-repeat center";
 			element.style.backgroundSize = "cover !important;";
 			//element.style = "background-size: contain;";
-
 			element.appendChild( details );
+
+			
+			element.addEventListener( 'click', function ( event ) {
+			transform( targets.helix, 2000 );
+			}, false );
+
 			var object = new THREE.CSS3DObject( element );
 			object.position.x = Math.random() * 4000 - 2000;
 			object.position.y = Math.random() * 4000 - 2000;
@@ -320,7 +325,11 @@ $(document).ready(function() {
 		button.addEventListener( 'click', function ( event ) {
 			transform( targets.grid, 2000 );
 		}, false );
+
+
 		transform( targets.table, 2000 );
+		transform( targets.grid, 2000 );
+
 		//
 		window.addEventListener( 'resize', onWindowResize, false );
 	}
