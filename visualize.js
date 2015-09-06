@@ -217,9 +217,10 @@ $(document).ready(function() {
 		camera = new THREE.PerspectiveCamera( 40, window.innerWidth / window.innerHeight, 1, 10000 );
 		camera.position.z = 3000;
 		scene = new THREE.Scene();
+
+
 		// table
 		for ( var i = 0; i < cards.length; i ++ ) {
-			
 			var element = document.createElement( 'div' );
 			element.className = 'element';
 			//element.style.backgroundColor = 'rgba(0,127,127,' + ( Math.random() * 0.5 + 0.25 ) + ')';
