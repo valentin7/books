@@ -236,10 +236,10 @@ $(document).ready(function() {
 			element.appendChild( symbol );
 			var details = document.createElement( 'div' );
 			details.className = 'details';
-			details.innerHTML = cards[i]["name"];// +'<br>' + "";
+			//details.innerHTML = cards[i]["name"];// +'<br>' + "";
 			console.log("bg image for " + i + " " + cards[i]["name"] + " is: " + cards[i]["imageURL"]);
-			//element.backgroundImage = "url(" + cards[i]["imageURL"] +");";
-			element.style.background = "url(" + cards[i]["imageURL"] +") white no-repeat center";
+			element.backgroundImage = "url(" + cards[i]["imageURL"] + ");";
+			element.style.background = "url(" + cards[i]["imageURL"] +") no-repeat center";
 			element.style.backgroundSize = "cover !important;";
 			//element.style = "background-size: contain;";
 
@@ -250,7 +250,7 @@ $(document).ready(function() {
 			object.position.z = Math.random() * 4000 - 2000;
 			scene.add( object );
 			objects.push( object );
-			//
+
 			var object = new THREE.Object3D();
 			object.position.x = (  i + 3  * 140 ) - 1330;
 			object.position.y = - ( i + 4  * 180 ) + 990;
