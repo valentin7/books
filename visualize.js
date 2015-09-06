@@ -271,12 +271,14 @@ $(document).ready(function() {
 		}
 		// helix
 		var vector = new THREE.Vector3();
+				camera.position.z = 4000;
+
 		for ( var i = 0, l = objects.length; i < l; i ++ ) {
 			var phi = i * 0.175 + Math.PI;
 			var object = new THREE.Object3D();
-			object.position.x = 900 * Math.sin( phi );
-			object.position.y = - ( i * 8 ) + 450;
-			object.position.z = 900 * Math.cos( phi );
+			object.position.x = 2000 * Math.sin( phi );
+			object.position.y = - ( i * 11 ) + 1000;
+			object.position.z = 2000 * Math.cos( phi );
 			vector.x = object.position.x * 2;
 			vector.y = object.position.y;
 			vector.z = object.position.z * 2;
