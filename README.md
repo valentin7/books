@@ -1,2 +1,2 @@
-# books-visualize
+# books
 Visualizer for books
