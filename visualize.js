@@ -127,6 +127,7 @@
 var trelloKey = "9ead4b2b6e8a2fa475ec919720dc3eb1";
 var cards;
 var lists;
+var labels;
 
 $(document).ready(function() {
 	console.log("READY");
@@ -244,7 +245,7 @@ $(document).ready(function() {
 			//element.style = "background-size: contain;";
 			element.appendChild( details );
 
-			
+
 			element.addEventListener( 'click', function ( event ) {
 			transform( targets.helix, 2000 );
 			}, false );
