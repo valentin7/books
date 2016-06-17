@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-    <title>three.js css3d - periodic table</title>
+    <title>Books recommended by Valentin</title>
     <style>
       html, body {
         height: 100%;
@@ -17,18 +17,21 @@
       a {
         color: #ffffff;
       }
-      #info {
-        position: absolute;
+      .info {
+        position: relative;;
         width: 100%;
         color: #ffffff;
         padding: 0px;
         padding-top: 15px;
         margin: 0px;
-        font-family: Monospace;
-        font-size: 13px;
+        font-family: Avenir;
+        font-size: 15px;
         font-weight: bold;
         text-align: center;
         z-index: 1;
+      }
+      #title {
+        font-size: 21px;
       }
       #menu {
         position: absolute;
@@ -36,23 +39,25 @@
         width: 100%;
         text-align: center;
       }
-      #content {
-        padding-bottom:100px;  
-      }
       #footer {
-        width:100%;
-        height:60px;
         position:absolute;
         bottom:0;
-        left:0;
-        font-family: Monospace;
+        right:0;
+        font-family: Avenir;
         font-size: 11px;
+        color: gray;
         text-align: center;
       }
       #left-menu {
         position: absolute;
-        width: 18%;
+        margin-bottom: 20px;
         height: 100%;
+        background-color: #2EC4B6;
+      }
+      #top-menu {
+        position: absolute;
+        width: 100%;
+        padding-bottom: 20px;
         background-color: #2EC4B6;
       }
       .element {
@@ -119,26 +124,22 @@
     <script src="js/renderers/CSS3DRenderer.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/async/1.4.2/async.js"></script>
     <div id="container"></div>
-    
+
     <div id="menu">
 <!--       <button id="table">TABLE</button>
- -->      
+ -->
       <button id="sphere">SPHERE</button>
       <button id="helix">HELIX</button>
       <button id="grid">GRID</button>
     </div>
-    <div id="left-menu">
+    <div id="top-menu">
       <div id="content">
-        <div id="info"><a href="https://trello.com/b/AfL51oWd/books" target="_blank">Visualization of books</a></div>
-        <div id="labels-menu">
-          <button id="table" class="label">I recommend</button>
-          <button id="sphere" class="label">I'm currently reading</button>
-          <button id="helix" class="label">Meh</button>
-          <button id="grid" class="label">About Leadership</button>
-        </div>
-        <div id="footer">Visualization based on <a href="http://threejs.org" target="_blank">three.js</a> - <a href="https://plus.google.com/113862800338869870683/posts/QcFk5HrWran" target="_blank">periodic table</a>.</div>
+        <div id="title" class="info"><strong>Visualization of <a href="https://trello.com/b/AfL51oWd/books" target="_blank"> books</a> <a href="http://val.pe">I recommend</a>.</strong></div>
+        <div class="info"> Mostly non-fiction and related to entrepreneurship, self-improvement, leadership, psychology, or things that have shaped my perspectives.</div>
       </div>
     </div>
+    <div id="footer">Visualization based on <a href="http://threejs.org" target="_blank">three.js</a> - <a href="https://plus.google.com/113862800338869870683/posts/QcFk5HrWran" target="_blank">periodic table</a>.</div>
+
     <script src="visualize.js"> </script>
   </body>
 </html>
