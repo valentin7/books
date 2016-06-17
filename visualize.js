@@ -166,7 +166,7 @@ $(document).ready(function() {
 						single["imageURL"] = data["url"];
 						callback();
 					//callback(data["url"]);
-						}	
+						}
 					);
 				} else {
 					callback();
@@ -187,11 +187,11 @@ $(document).ready(function() {
 			// init();
 			// animate();
 			//alert('page content: ' + data);
-		}	
+		}
 	);
 });
 
-	
+
 
 	function getNameForCard(card, callback) {
 
@@ -205,7 +205,7 @@ $(document).ready(function() {
 			{},
 			function(data) {
 				callback(data["url"]);
-			}	
+			}
 			);
 		} else {
 			console.log("PRETTY NIL");
@@ -310,10 +310,10 @@ $(document).ready(function() {
 		controls.minDistance = 500;
 		controls.maxDistance = 6000;
 		controls.addEventListener( 'change', render );
-		var button = document.getElementById( 'table' );
-		button.addEventListener( 'click', function ( event ) {
-			transform( targets.table, 2000 );
-		}, false );
+		// var button = document.getElementById( 'table' );
+		// button.addEventListener( 'click', function ( event ) {
+		// 	transform( targets.table, 2000 );
+		// }, false );
 		var button = document.getElementById( 'sphere' );
 		button.addEventListener( 'click', function ( event ) {
 			transform( targets.sphere, 2000 );
